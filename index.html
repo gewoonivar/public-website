@@ -145,7 +145,7 @@
 							<li><a href="mailto:ivar@evolyn.io" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Evolyn.io</li><li>2025</li><li><a href="https://www.evolyn.io/terms-and-conditions">Terms and Conditions</a></li>
+							<li>&copy; Evolyn.io</li><li id="current-year">2025</li><li><a href="https://www.evolyn.io/terms-and-conditions">Terms and Conditions</a></li>
 						</ul>
 					</footer>
 
@@ -159,6 +159,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- Dynamic Year Script -->
+		<script>
+			// Update the year automatically
+			document.addEventListener('DOMContentLoaded', function() {
+				const yearElement = document.getElementById('current-year');
+				if (yearElement) {
+					const currentYear = new Date().getFullYear();
+					yearElement.textContent = currentYear;
+				}
+			});
+		</script>
 
 	</body>
 </html>
