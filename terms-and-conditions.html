@@ -21,11 +21,11 @@
 									<a href="#menu" class="menuToggle"><span></span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="#banner">Home</a></li>
-											<li><a href="#one">Our Approach</a></li>
-											<li><a href="#two">Core Values</a></li>
-											<li><a href="#three">Recent Projects</a></li>
-											<li><a href="#cta">Get Started</a></li>
+											<li><a href="index.html#banner">Home</a></li>
+											<li><a href="index.html#one">Our Approach</a></li>
+											<li><a href="index.html#two">Core Values</a></li>
+											<li><a href="index.html#three">Recent Projects</a></li>
+											<li><a href="index.html#cta">Get Started</a></li>
 										</ul>
 									</div>
 								</li>
@@ -361,7 +361,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						<li><a href="mailto:ivar@evolyn.io" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Evolyn.io</li><li>2025</li><li><a href="https://www.evolyn.io/terms-and-conditions">Terms and Conditions</a></li>
+						<li>&copy; Evolyn.io</li><li id="current-year">2025</li><li><a href="https://www.evolyn.io/terms-and-conditions">Terms and Conditions</a></li>
 					</ul>
 				</footer>
 
@@ -375,6 +375,18 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+
+	<!-- Dynamic Year Script -->
+	<script>
+		// Update the year automatically
+		document.addEventListener('DOMContentLoaded', function() {
+			const yearElement = document.getElementById('current-year');
+			if (yearElement) {
+				const currentYear = new Date().getFullYear();
+				yearElement.textContent = currentYear;
+			}
+		});
+	</script>
 
 </body>
 </html>
