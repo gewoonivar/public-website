@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Block asset folders - no need to index these
+Disallow: /images/
+Disallow: /assets/
+
+# Block any potential admin or private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /test/
+
+# Allow specific file types that might be useful
+Allow: /*.html
+Allow: /*.xml
+Allow: /*.txt
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Sitemap location (when you create one)
+# Sitemap: https://www.evolyn.io/sitemap.xml 
