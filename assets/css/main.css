@@ -4105,3 +4105,55 @@ input, select, textarea {
 	text-align: center;
 }
 
+/* Book a Call Button Styling */
+#header #nav .book-call-btn {
+	margin-right: 1em;
+	display: inline-block;
+	margin-top: 0.0em; /* Add spacing to align with hamburger menu */
+}
+
+#header #nav .book-call-btn .button {
+	background-color: #462698;
+	border-radius: 3px;
+	border: 0;
+	box-shadow: inset 0 0 0 1px #fff;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: 700;
+	height: 3.125em;
+	letter-spacing: 0.05em;
+	line-height: 3.125em;
+	padding: 0 1.75em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	white-space: nowrap;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	vertical-align: middle; /* Ensure vertical centering */
+}
+
+#header #nav .book-call-btn .button:hover {
+	background-color: #462698;
+	color: #FFFFFF;
+}
+
+#header #nav .book-call-btn .button:active {
+	background-color: #b5a0e8;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 736px) {
+	#header #nav .book-call-btn {
+		margin-right: 0.5em;
+	}
+	
+	#header #nav .book-call-btn .button {
+		font-size: 0.7em;
+		padding: 0 2em;
+		height: 2.8em;
+		line-height: 2.8em;
+	}
+}
+
