@@ -2636,7 +2636,7 @@ input, select, textarea {
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #F6F5EC;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -4120,10 +4120,10 @@ input, select, textarea {
 	color: #FFFFFF;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 0.8em;
+	font-size: 0.75em;
 	font-weight: 700;
 	height: 3.125em;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.12em;
 	line-height: 3.125em;
 	padding: 0 1.75em;
 	text-align: center;
@@ -4132,6 +4132,7 @@ input, select, textarea {
 	white-space: nowrap;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	vertical-align: middle; /* Ensure vertical centering */
+	font-family: 'Inter' !important; /* ← Add this line */
 }
 
 #header #nav .book-call-btn .button:hover {
@@ -4154,6 +4155,47 @@ input, select, textarea {
 		padding: 0 2em;
 		height: 2.8em;
 		line-height: 2.8em;
+	}
+}
+
+/* Founder Section Styling */
+.founder-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	margin: 2em 0;
+}
+
+.founder-section .image {
+	flex-shrink: 0;
+}
+
+.founder-section .image img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2px solid #462698;
+}
+
+.founder-content p {
+	margin: 0;
+	font-style: italic;
+	color: #462698;
+	font-size: 1.0em;
+}
+
+/* Mobile responsive for founder section */
+@media screen and (max-width: 736px) {
+	.founder-section {
+		flex-direction: column;
+		text-align: center;
+		gap: 1em;
+	}
+	
+	.founder-section .image img {
+		width: 80px;
+		height: 80px;
 	}
 }
 
