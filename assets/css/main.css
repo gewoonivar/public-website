@@ -1830,6 +1830,11 @@ input, select, textarea {
 			display: none;
 		}
 
+		/* Override: Keep line breaks in approach section text */
+		#our-approach header.major p br {
+			display: inline !important;
+		}
+
 	}
 
 /* Form */
@@ -3884,10 +3889,21 @@ input, select, textarea {
 				}
 
 				#cta .inner .actions {
-					margin-left: auto;
+					margin-left: 0 !important;
 					margin-right: auto;
-					max-width: 20em;
+					max-width: none;
 					width: 100%;
+					justify-content: center;
+				}
+
+				#cta .inner .actions li {
+					text-align: center;
+					padding: 0 !important;
+					width: 100%;
+				}
+
+				#cta .inner .actions li > * {
+					width: 100% !important;
 				}
 
 		}
@@ -4185,7 +4201,15 @@ input, select, textarea {
 	font-size: 1.0em;
 }
 
-/* Mobile responsive for founder section */
+/* Certification badge base styles */
+.certification-badge img {
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Mobile responsive for founder section and certification badge */
 @media screen and (max-width: 736px) {
 	.founder-section {
 		flex-direction: column;
@@ -4194,8 +4218,12 @@ input, select, textarea {
 	}
 	
 	.founder-section .image img {
-		width: 80px;
-		height: 80px;
+		width: 120px;
+		height: 120px;
+	}
+	
+	.certification-badge img {
+		max-width: 56px !important;
 	}
 }
 
